@@ -10,11 +10,17 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     const passWordField=document.getElementById('password-field');
     const password=passWordField.value;
     if(email==='sunny@sunny.com' && password==='1234'){
-        console.log('valid user')
+        // console.log('valid user');
+        document.getElementById('btn-submit').addEventListener('click',function(){
+            location.href='bank.html';
+        });
     }
 
     else{
         console.log('invalid user')
     }
 
-})
+});
+
+// Another Page connection 
+
